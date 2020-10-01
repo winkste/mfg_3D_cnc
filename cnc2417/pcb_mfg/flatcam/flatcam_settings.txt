@@ -1,0 +1,56 @@
+isolation settings:
+--- GERBER			--4--	--5--		--6--
+ToolDia:			0.016				0.02
+Width:				4					2	
+Pass overlap:		0.15				
+Combine passes:		true
+
+--- GEO
+CUT Z: 				-0.15	-0.08		-0.06
+Feed Rate:			300.0	200.0
+ToolDia:			0.016	
+Speed:				10000
+Depth/pass:			0.05	0.04		0.02
+
+--- CNC
+ToolDia:			0.016				0.02
+--------------------------------------------------------
+--- BOARD CUTOUT
+--- GERBER
+ToolDia:					1.0
+Margin:						0.1
+Gap Size					0.15
+
+--- GEO
+CUT Z:						-1.7
+Feed Rate					100.0
+ToolDia:					1.0
+Spindle:					10000
+Depth Pass:					0.002
+
+--- CNC
+ToolDia:					1.0
+
+--------------------------------------------------------
+profile settings:
+--- GERBER
+ToolDia:			1.0
+Width:				1
+Pass overlap:		0.15
+Combine passes:		no
+---- GEO
+CUT Z: 				-1.6
+Feed Rate:			150.0
+ToolDia:			1.0
+Speed:				10000
+Depth/pass:			0.2
+
+--- CNC
+ToolDia:			1.0
+-------------------------------------------------------
+drilling
+--- GERBER
+Cut Z:				-2.0
+Feed Rate:			150.0
+Speed:				10000
+
